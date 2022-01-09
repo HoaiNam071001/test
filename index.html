@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" hidden class="nav_input" id="btn-onmobile">
+        <label class="btn-menu" for="btn-onmobile">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </label>  
+        <div class="list-menu">
+            <h2>Home</h2>
+            <h2>Menu</h2>
+            <h2>Contact</h2>
+        </div>  
+        
+        <div class="list-menu-mobile">
+            <label class="btn-x" for="btn-onmobile">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label> 
+            <h2>Home</h2>
+            <h2>Menu</h2>
+            <h2>Contact</h2>
+        </div> 
+        <label for="btn-onmobile" class="overlay-view"></label>
+    </div>
+
+    <div class="cdf">
+      <a href="hoainam"></a>
+      <div class="ads">
+        
+      </div>
+    </div>
+
+
+<div id="toast"></div>
+
+  <div>
+    <div onclick="showSuccessToast();" class="btn btn--success">Show success toast</div>
+    <div onclick="showErrorToast();" class="btn btn--danger">Show error toast</div>
+  </div>
+
+  <script>
+    function showSuccessToast() {
+      toast({
+        title: "Thành công!",
+        message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+        type: "success",
+        duration: 3000
+      });
+    }
+
+    function showErrorToast() {
+      toast({
+        title: "Thất bại!",
+        message: "Có lỗi xảy ra, vui lòng liên hệ quản trị viên.",
+        type: "error",
+        duration: 3000
+      });
+    }
+  </script>
+
+    <div class="grid wide">
+        <div class="row">
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+          <div class="col l-2 m-4 c-12">
+            <h2>l-2 m-4 c-12</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-3 m-6 c-6">
+            <h2>l-3 m-6 c-6</h2>
+          </div>
+          <div class="col l-3 m-6 c-6">
+            <h2>l-3 m-6 c-6</h2>
+          </div>
+          <div class="col l-3 m-6 c-6">
+            <h2>l-3 m-6 c-6</h2>
+          </div>
+          <div class="col l-3 m-6 c-6">
+            <h2>l-3 m-6 c-6</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-4 m-12 c-12">
+            <h2>l-4 m-12 c-12</h2>
+          </div>
+          <div class="col l-4 m-12 c-12">
+            <h2>l-4 m-12 c-12</h2>
+          </div>
+          <div class="col l-4 m-12 c-12">
+            <h2>l-4 m-12 c-12</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-6 m-6 c-12">
+            <h2>l-6 m-6 c-12</h2>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <h2>l-6 m-6 c-12</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <h2>l-12 m-12 c-12</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-4 m-0 c-0">
+            <h2>l-4 m-0 c-0</h2>
+          </div>
+          <div class="col l-8 m-12 c-12">
+            <h2>l-8 m-12 c-12</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-8 m-12 c-12">
+            <h2>l-8 m-12 c-12</h2>
+          </div>
+          <div class="col l-4 m-0 c-0">
+            <h2>l-4 m-0 c-0</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-4 m-4 c-6">
+            <h2>l-4 m-4 c-6</h2>
+          </div>
+          <div class="col l-4 m-4 c-6 l-o-4 m-o-4">
+            <h2>l-4 m-4 c-6 l-o-4 m-o-4</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col l-4 m-4 c-12 l-o-4 m-o-4">
+            <h2>l-4 m-4 c-12 l-o-4 m-o-4</h2>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
